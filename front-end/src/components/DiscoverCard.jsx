@@ -1,0 +1,27 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const DiscoverCard = ({ album, i }) => {
+  return (
+    <div className='w-full flex flex-col mt-5 gap-2 max-w-sm mx-auto overflow-hidden'>
+      <div className='w-full h-36 border border-black rounded-md p-1'>
+        <Link to={`/dashboard/album-page/album=${album?.name}&artist=${album.name}`}>
+          <img
+            src={`${album.image[3]["#text"]}`}
+            alt='hie'
+            className='object-cover bg-center w-full h-full transform hover:scale-110 transition .duraton-700  ease-in-out'
+          />
+        </Link>
+      </div>
+      <Link to={`/dashboard/album-page/${album?.name}`}>
+        <h2 className='font-semibold capitalize'>{album?.name}</h2>
+      </Link>
+      <div className='flex items-center justify-between'>
+        <p className='capitalize font-semibold text-gray-500'>playcount:</p>
+        <span className='text-green-500'>{album?.listeners}</span>
+      </div>
+    </div>
+  );
+};
+
+export default DiscoverCard;
