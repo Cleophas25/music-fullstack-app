@@ -27,11 +27,11 @@ This is a full-stack music application built with React on the front-end and Lar
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/Cleophas25/music-fullstack-app.git`
-2. Navigate to the front-end directory: `cd frontend`
+2. Navigate to the front-end directory: `cd front-end`
 3. Install dependencies: `npm install`
-4. Start the front-end server: `npm start`
+4. Start the front-end server: `npm run dev`
 5. Open another terminal window/tab
-6. Navigate to the back-end directory: `cd ../backend`
+6. Navigate to the back-end directory: `cd back-end`
 7. Install dependencies: `composer install`
 8. Configure the database connection in the `.env` file
 9. Migrate the database: `php artisan migrate`
